@@ -8,6 +8,223 @@
   <meta name="description" content="American University of Healthcare Technology is a future-oriented university focused on health technology, public health, data science, biomedical informatics, and sustainable wellbeing." />
 
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    .hero-visual {
+      position: relative;
+      min-height: 520px;
+    }
+
+    .hero-photo-main {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .hero-logo-card {
+      position: absolute;
+      left: -28px;
+      bottom: 36px;
+      width: 245px;
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--text);
+      border-radius: 26px;
+      padding: 22px;
+      box-shadow: 0 24px 60px rgba(2, 23, 51, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+    }
+
+    .hero-logo-card img {
+      width: 110px;
+      margin-bottom: 14px;
+    }
+
+    .hero-logo-card strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .hero-logo-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .home-photo {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 22px;
+      margin-bottom: 22px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 28px rgba(8, 38, 90, 0.08);
+      background: #f7faff;
+    }
+
+    .photo-panel {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .photo-panel img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .photo-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      min-height: 340px;
+      box-shadow: var(--shadow);
+      background: var(--navy);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      opacity: 0.78;
+      transition: 0.3s ease;
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.04);
+      opacity: 0.9;
+    }
+
+    .photo-card-content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 28px;
+      color: #ffffff;
+      background: linear-gradient(to top, rgba(2, 15, 35, 0.9), rgba(2, 15, 35, 0));
+    }
+
+    .photo-card-content h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .photo-card-content p {
+      color: #dbeafe;
+      font-size: 15px;
+    }
+
+    .campus-banner {
+      position: relative;
+      overflow: hidden;
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      min-height: 430px;
+      background: var(--navy);
+    }
+
+    .campus-banner img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      opacity: 0.72;
+    }
+
+    .campus-banner-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      padding: 42px;
+      background: linear-gradient(to top, rgba(2, 15, 35, 0.86), rgba(2, 15, 35, 0.16));
+      color: #ffffff;
+    }
+
+    .campus-banner-content h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 36px;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .campus-banner-content p {
+      max-width: 720px;
+      color: #dbeafe;
+      font-size: 17px;
+    }
+
+    .footer-contact-lines {
+      display: grid;
+      gap: 6px;
+    }
+
+    .footer-contact-lines a {
+      color: #cbd5e1;
+    }
+
+    .footer-contact-lines a:hover {
+      color: var(--gold);
+    }
+
+    @media (max-width: 960px) {
+      .hero-visual {
+        min-height: auto;
+      }
+
+      .hero-photo-main {
+        height: 380px;
+      }
+
+      .hero-logo-card {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        margin-top: 18px;
+      }
+
+      .photo-panel img {
+        height: 320px;
+      }
+
+      .photo-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .campus-banner,
+      .campus-banner img {
+        min-height: 360px;
+        height: 360px;
+      }
+
+      .campus-banner-content {
+        padding: 28px;
+      }
+
+      .campus-banner-content h3 {
+        font-size: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -63,33 +280,17 @@
           </div>
         </div>
 
-        <div class="hero-card">
-          <img src="assets/logo.png" alt="American University of Healthcare Technology Logo" />
+        <div class="hero-visual">
+          <img
+            class="hero-photo-main"
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=85"
+            alt="Healthcare technology and medical research environment"
+          />
 
-          <h2>A new model for health education.</h2>
-
-          <p>
-            AUHT connects healthcare, data science, digital innovation, public health,
-            ethics, policy, and human-centered practice in one interdisciplinary academic community.
-          </p>
-
-          <div class="hero-mini-grid">
-            <div>
-              <strong>Applied</strong>
-              <span>Project-based learning</span>
-            </div>
-            <div>
-              <strong>Global</strong>
-              <span>International outlook</span>
-            </div>
-            <div>
-              <strong>Ethical</strong>
-              <span>Responsible innovation</span>
-            </div>
-            <div>
-              <strong>Future</strong>
-              <span>Health technology focus</span>
-            </div>
+          <div class="hero-logo-card">
+            <img src="assets/logo.png" alt="American University of Healthcare Technology Logo" />
+            <strong>A new model for health education.</strong>
+            <span>Technology · Evidence · Public Health · Human Wellbeing</span>
           </div>
         </div>
       </div>
@@ -109,6 +310,11 @@
 
         <div class="grid grid-3">
           <div class="card">
+            <img
+              class="home-photo"
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85"
+              alt="Digital learning and data technology workspace"
+            />
             <div class="icon">01</div>
             <h3>Health Data and AI</h3>
             <p>
@@ -118,6 +324,11 @@
           </div>
 
           <div class="card">
+            <img
+              class="home-photo"
+              src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1000&q=85"
+              alt="Healthcare and public health practice setting"
+            />
             <div class="icon">02</div>
             <h3>Public Health and Equity</h3>
             <p>
@@ -127,6 +338,11 @@
           </div>
 
           <div class="card">
+            <img
+              class="home-photo"
+              src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1000&q=85"
+              alt="Scientific laboratory and applied research environment"
+            />
             <div class="icon">03</div>
             <h3>Applied Research and Practice</h3>
             <p>
@@ -186,20 +402,11 @@
           </div>
         </div>
 
-        <div class="panel">
-          <h3>Learning that produces real outcomes.</h3>
-          <p>
-            AUHT courses are designed around applied projects, case-based learning,
-            data laboratories, ethics training, research supervision, and professional
-            portfolio development.
-          </p>
-
-          <ul>
-            <li>Case seminars and professional simulations</li>
-            <li>Health data analysis and digital health projects</li>
-            <li>Community assessment and public health planning</li>
-            <li>Research reports, Capstone projects, and policy briefs</li>
-          </ul>
+        <div class="photo-panel">
+          <img
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=85"
+            alt="University students learning together"
+          />
         </div>
       </div>
     </section>
@@ -216,29 +423,47 @@
           </p>
         </div>
 
-        <div class="grid grid-3">
-          <div class="card">
-            <h3>Computational Health</h3>
-            <p>
-              Research in clinical data, AI, decision support, health analytics,
-              real-world evidence, patient safety, and digital health evaluation.
-            </p>
+        <div class="photo-grid">
+          <div class="photo-card">
+            <img
+              src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1000&q=85"
+              alt="Computational health and technology workspace"
+            />
+            <div class="photo-card-content">
+              <h3>Computational Health</h3>
+              <p>
+                Clinical data, AI, decision support, health analytics, real-world evidence,
+                patient safety, and digital health evaluation.
+              </p>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>Applied Epidemiology</h3>
-            <p>
-              Research in disease prevention, surveillance, chronic disease management,
-              health behavior, program evaluation, and community health.
-            </p>
+          <div class="photo-card">
+            <img
+              src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1000&q=85"
+              alt="Laboratory science and research"
+            />
+            <div class="photo-card-content">
+              <h3>Applied Epidemiology</h3>
+              <p>
+                Disease prevention, surveillance, chronic disease management,
+                health behavior, program evaluation, and community health.
+              </p>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>Sustainable Wellbeing</h3>
-            <p>
-              Research in health equity, social determinants, policy, healthy cities,
-              health communication, ethics, and human-centered service innovation.
-            </p>
+          <div class="photo-card">
+            <img
+              src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1000&q=85"
+              alt="Healthcare service and wellbeing environment"
+            />
+            <div class="photo-card-content">
+              <h3>Sustainable Wellbeing</h3>
+              <p>
+                Health equity, social determinants, policy, healthy cities,
+                health communication, ethics, and human-centered service innovation.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -247,26 +472,50 @@
     <section class="section">
       <div class="container two-column">
         <div class="panel">
-          <h3>Located in Colorado Springs.</h3>
+          <h3>Learning that produces real outcomes.</h3>
           <p>
-            AUHT is connected to a city known for its natural environment, outdoor lifestyle,
-            educational resources, and growing innovation culture. The university’s learning
-            model supports both local engagement and global participation.
+            AUHT courses are designed around applied projects, case-based learning,
+            data laboratories, ethics training, research supervision, and professional
+            portfolio development.
           </p>
+
+          <ul>
+            <li>Case seminars and professional simulations</li>
+            <li>Health data analysis and digital health projects</li>
+            <li>Community assessment and public health planning</li>
+            <li>Research reports, Capstone projects, and policy briefs</li>
+          </ul>
         </div>
 
-        <div>
-          <div class="section-title">
-            <span>Campus and Digital Learning</span>
-            <h2>A flexible environment for modern learners.</h2>
-            <p>
-              AUHT may support online teaching, blended learning, project supervision,
-              academic advising, digital learning platforms, international seminars,
-              and research collaboration.
-            </p>
-          </div>
+        <div class="photo-panel">
+          <img
+            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=85"
+            alt="Professional academic discussion and collaboration"
+          />
+        </div>
+      </div>
+    </section>
 
-          <a href="campus.html" class="btn btn-gold">Campus and Learning</a>
+    <section class="section section-light">
+      <div class="container">
+        <div class="campus-banner">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85"
+            alt="Mountain landscape and campus-inspired learning environment"
+          />
+
+          <div class="campus-banner-content">
+            <div>
+              <h3>Inspired by Colorado Springs.</h3>
+              <p>
+                AUHT is connected to a city known for its natural environment, outdoor lifestyle,
+                educational resources, and growing innovation culture. The university’s learning
+                model supports both local engagement and global participation.
+              </p>
+              <br />
+              <a href="campus.html" class="btn btn-gold">Campus and Learning</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -312,8 +561,12 @@
 
       <div>
         <h4>Contact</h4>
-        <p>Colorado Springs, Colorado, United States</p>
-        <p>info@auht.edu</p>
+        <div class="footer-contact-lines">
+          <p>Colorado Springs, Colorado, United States</p>
+          <p>Admissions: <a href="mailto:admission@auht.edu.gl">admission@auht.edu.gl</a></p>
+          <p>Consultation: <a href="mailto:consult@auht.edu.gl">consult@auht.edu.gl</a></p>
+          <p>Cooperation and Research: <a href="mailto:cooperation@auht.edu.gl">cooperation@auht.edu.gl</a></p>
+        </div>
       </div>
     </div>
 
