@@ -10,6 +10,38 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <style>
+    .header-inner {
+      min-height: 165px;
+      align-items: center;
+    }
+
+    .brand {
+      gap: 28px;
+    }
+
+    .brand img {
+      width: 118px;
+      height: 118px;
+      object-fit: contain;
+      padding: 10px;
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 16px 38px rgba(8, 38, 90, 0.14);
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 37px;
+      line-height: 1.12;
+      max-width: 760px;
+    }
+
+    .brand-subtitle {
+      font-size: 23px;
+      margin-top: 10px;
+      color: #64748b;
+    }
+
     .hero-visual {
       position: relative;
       min-height: 520px;
@@ -38,7 +70,7 @@
     }
 
     .hero-logo-card img {
-      width: 110px;
+      width: 125px;
       margin-bottom: 14px;
     }
 
@@ -186,6 +218,33 @@
     }
 
     @media (max-width: 960px) {
+      .header-inner {
+        min-height: 110px;
+      }
+
+      .brand {
+        gap: 14px;
+      }
+
+      .brand img {
+        width: 74px;
+        height: 74px;
+        border-radius: 20px;
+        padding: 7px;
+      }
+
+      .brand-title {
+        font-size: 18px;
+        line-height: 1.18;
+        max-width: 360px;
+      }
+
+      .brand-subtitle {
+        display: block;
+        font-size: 13px;
+        margin-top: 4px;
+      }
+
       .hero-visual {
         min-height: auto;
       }
@@ -222,6 +281,21 @@
 
       .campus-banner-content h3 {
         font-size: 30px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .brand-title {
+        font-size: 15px;
+      }
+
+      .brand-subtitle {
+        font-size: 11px;
+      }
+
+      .brand img {
+        width: 66px;
+        height: 66px;
       }
     }
   </style>
