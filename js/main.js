@@ -1,4 +1,4 @@
-// Mobile nav toggle
+// Mobile nav toggle + active page highlight
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', () => nav.classList.toggle('open'));
   }
 
-  // Highlight current page link
   const path = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.main-nav a').forEach(a => {
     if (a.getAttribute('href') === path) a.classList.add('active');
