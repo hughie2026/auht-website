@@ -52,22 +52,23 @@
       font-size: 1rem;
     }
 
+    /* President / Provost feature card — smaller portrait (220px) */
     .leader-feature {
       display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 50px;
+      grid-template-columns: 220px 1fr;
+      gap: 44px;
       align-items: center;
       background: #fff;
-      padding: 44px;
+      padding: 40px 44px;
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-md);
       border-left: 5px solid var(--color-accent);
-      max-width: 920px;
+      max-width: 880px;
       margin: 0 auto;
     }
     .leader-photo {
       aspect-ratio: 3/4;
-      width: 280px;
+      width: 220px;
       overflow: hidden;
       border-radius: var(--radius-md);
       background: var(--color-bg-alt);
@@ -77,32 +78,41 @@
     .leader-info h3 {
       color: var(--color-primary);
       margin-bottom: 6px;
-      font-size: 1.65rem;
+      font-size: 1.55rem;
     }
     .leader-dept {
       color: var(--color-teal);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       font-weight: 700;
       margin-bottom: 8px;
     }
     .leader-title {
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       color: var(--color-accent-dark);
       font-weight: 600;
-      margin-bottom: 18px;
+      margin-bottom: 6px;
+    }
+    /* Email line — plain text, not a link */
+    .leader-email {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      letter-spacing: 0.2px;
+      margin-bottom: 16px;
+      word-break: break-all;
     }
     .leader-resp {
       color: var(--color-text-muted);
       margin: 0;
-      font-size: 0.98rem;
+      font-size: 0.96rem;
       line-height: 1.7;
     }
 
+    /* Cards — fixed 190px portrait, centered (no longer stretches with column width) */
     .leader-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 28px;
     }
     .leader-card {
@@ -114,6 +124,7 @@
       border-top: 4px solid var(--color-accent);
       display: flex;
       flex-direction: column;
+      padding-top: 28px;
     }
     .leader-card:hover {
       transform: translateY(-4px);
@@ -121,28 +132,39 @@
     }
     .leader-card-photo {
       aspect-ratio: 3/4;
-      width: 100%;
+      width: 190px;
+      margin: 0 auto;
       overflow: hidden;
+      border-radius: var(--radius-md);
       background: var(--color-bg-alt);
+      box-shadow: var(--shadow-sm);
     }
     .leader-card-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .leader-card-body { padding: 24px 26px 28px; }
+    .leader-card-body {
+      padding: 22px 26px 28px;
+      text-align: center;
+    }
     .leader-card-body h3 {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       margin-bottom: 6px;
       color: var(--color-primary);
     }
     .leader-card-body .leader-dept {
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       margin-bottom: 6px;
     }
     .leader-card-body .leader-title {
-      font-size: 0.92rem;
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+    .leader-card-body .leader-email {
+      font-size: 0.82rem;
       margin-bottom: 12px;
     }
     .leader-card-body .leader-resp {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       line-height: 1.65;
+      text-align: left;
     }
 
     @media (max-width: 720px) {
@@ -150,9 +172,10 @@
         grid-template-columns: 1fr;
         padding: 32px;
         text-align: center;
-        gap: 28px;
+        gap: 24px;
       }
-      .leader-photo { width: 220px; margin: 0 auto; }
+      .leader-photo { width: 180px; margin: 0 auto; }
+      .leader-card-photo { width: 170px; }
       .board-banner { padding: 36px 28px; }
     }
   </style>
@@ -228,6 +251,7 @@
         <h3>Prof. Dr. Jonathan Whitaker</h3>
         <div class="leader-dept">Office of the President</div>
         <div class="leader-title">President</div>
+        <div class="leader-email">jwhitaker@auht.us.org</div>
         <p class="leader-resp">Responsible for the university's overall strategy, external representation, communication with the Board of Directors, international cooperation, and major institutional decisions.</p>
       </div>
     </div>
@@ -248,6 +272,7 @@
         <h3>Dr. Michael Reynolds</h3>
         <div class="leader-dept">Office of Academic Affairs</div>
         <div class="leader-title">Provost</div>
+        <div class="leader-email">mreynolds@auht.us.org</div>
         <p class="leader-resp">Coordinates curriculum development, faculty management, teaching quality, academic policy, and program approval across the university.</p>
       </div>
     </div>
@@ -265,12 +290,13 @@
 
       <div class="leader-card">
         <div class="leader-card-photo">
-          <img src="images/leadership/liwei.jpg" alt="Dr. Li Wei" />
+          <img src="images/leadership/liwei.jpg" alt="Dr. Bao Yuzhu" />
         </div>
         <div class="leader-card-body">
           <h3>Dr. Bao Yuzhu</h3>
           <div class="leader-dept">Healthcare Data Science & Biomedical Informatics Programs</div>
           <div class="leader-title">Program Director</div>
+          <div class="leader-email">byuzhu@auht.us.org</div>
           <p class="leader-resp">Leads program development in healthcare data science, biomedical informatics, AI health applications, and data-related curriculum.</p>
         </div>
       </div>
@@ -283,6 +309,7 @@
           <h3>Dr. Sarah Mitchell</h3>
           <div class="leader-dept">Public Health & Epidemiology Programs</div>
           <div class="leader-title">Program Director</div>
+          <div class="leader-email">smitchell@auht.us.org</div>
           <p class="leader-resp">Leads public health, epidemiology, healthy city science, and related certificate programs.</p>
         </div>
       </div>
@@ -295,6 +322,7 @@
           <h3>Dr. Grace Chen</h3>
           <div class="leader-dept">Behavioral Medicine & Whole-Person Health Programs</div>
           <div class="leader-title">Program Director</div>
+          <div class="leader-email">gchen@auht.us.org</div>
           <p class="leader-resp">Leads behavioral medicine, lifestyle medicine, whole-person health, and chronic-disease management curriculum.</p>
         </div>
       </div>
@@ -307,6 +335,7 @@
           <h3>Dr. Robert Hayes</h3>
           <div class="leader-dept">Health Policy & Management Programs</div>
           <div class="leader-title">Program Director</div>
+          <div class="leader-email">rhayes@auht.us.org</div>
           <p class="leader-resp">Leads health policy, healthcare management, quality improvement, value-based care, and digital health operations curriculum.</p>
         </div>
       </div>
@@ -332,6 +361,7 @@
           <h3>Dr. Wang Xiaoming</h3>
           <div class="leader-dept">University Research Center</div>
           <div class="leader-title">Director of Research Center</div>
+          <div class="leader-email">wxiaoming@auht.us.org</div>
           <p class="leader-resp">Oversees the Research Center, the Postdoctoral Research Fellow program, research-ethics coordination, and academic-outcomes management.</p>
         </div>
       </div>
@@ -344,6 +374,7 @@
           <h3>Ms. Rebecca Collins</h3>
           <div class="leader-dept">Office of Student Affairs & Admissions</div>
           <div class="leader-title">Director of Student Affairs & Admissions</div>
+          <div class="leader-email">rcollins@auht.us.org</div>
           <p class="leader-resp">Oversees admissions, student services, learning support, career development, and student-record management.</p>
         </div>
       </div>
@@ -356,6 +387,7 @@
           <h3>Mr. Kevin Parker</h3>
           <div class="leader-dept">Office of Administration, Finance & Compliance</div>
           <div class="leader-title">Director of Administration, Finance & Compliance</div>
+          <div class="leader-email">kparker@auht.us.org</div>
           <p class="leader-resp">Oversees financial budgeting, administrative operations, human resources, compliance documentation, and quality assurance.</p>
         </div>
       </div>
