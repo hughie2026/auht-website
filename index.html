@@ -3,37 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>American University of Healthcare Technology | AUHT</title>
-  <meta name="description" content="Advancing health through technology, evidence, and human wellbeing. AUHT is an applied higher-education institution focused on healthcare technology, public health, and population health." />
+
+  <!-- Primary SEO -->
+  <title>American University of Healthcare Technology (AUHT)</title>
+
+  <meta
+    name="description"
+    content="Official website of the American University of Healthcare Technology (AUHT), an applied higher-education institution focused on healthcare technology, public health, biomedical informatics, behavioral medicine, population health, and sustainable wellbeing."
+  />
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  />
+
+  <link rel="canonical" href="https://www.auht.us.org/" />
+
+  <!-- Website icons -->
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="apple-touch-icon" href="images/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://www.auht.us.org/" />
+  <meta property="og:site_name" content="AUHT" />
+
+  <meta
+    property="og:title"
+    content="American University of Healthcare Technology (AUHT)"
+  />
+
+  <meta
+    property="og:description"
+    content="Advancing health through technology, evidence, and human wellbeing."
+  />
+
+  <meta
+    property="og:image"
+    content="https://www.auht.us.org/images/logo.png"
+  />
+
+  <meta
+    property="og:image:alt"
+    content="American University of Healthcare Technology logo"
+  />
+
+  <!-- Twitter / social sharing -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="American University of Healthcare Technology (AUHT)"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Advancing health through technology, evidence, and human wellbeing."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://www.auht.us.org/images/logo.png"
+  />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.auht.us.org/#organization",
+        "name": "American University of Healthcare Technology",
+        "alternateName": "AUHT",
+        "url": "https://www.auht.us.org/",
+        "description": "The American University of Healthcare Technology is an applied higher-education institution focused on healthcare technology, public health, biomedical informatics, behavioral medicine, population health, health policy, and sustainable wellbeing.",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.auht.us.org/#logo",
+          "url": "https://www.auht.us.org/images/logo.png",
+          "contentUrl": "https://www.auht.us.org/images/logo.png",
+          "caption": "American University of Healthcare Technology logo"
+        },
+        "image": {
+          "@id": "https://www.auht.us.org/#logo"
+        },
+        "email": [
+          "consult@auht.us.org",
+          "admission@auht.us.org",
+          "cooperation@auht.us.org"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "North Academy Boulevard",
+          "addressLocality": "Colorado Springs",
+          "addressRegion": "CO",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.auht.us.org/#website",
+        "url": "https://www.auht.us.org/",
+        "name": "AUHT",
+        "alternateName": [
+          "American University of Healthcare Technology",
+          "AUHT University"
+        ],
+        "description": "Official website of the American University of Healthcare Technology.",
+        "publisher": {
+          "@id": "https://www.auht.us.org/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.auht.us.org/#webpage",
+        "url": "https://www.auht.us.org/",
+        "name": "American University of Healthcare Technology (AUHT)",
+        "description": "Official website of the American University of Healthcare Technology, an applied higher-education institution focused on healthcare technology and public health.",
+        "isPartOf": {
+          "@id": "https://www.auht.us.org/#website"
+        },
+        "about": {
+          "@id": "https://www.auht.us.org/#organization"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://www.auht.us.org/#logo"
+        },
+        "inLanguage": "en-US"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
 <div class="utility-bar">
   <div class="container">
     <a href="contact.html">Contact</a>
-    <a href="mailto:admission@auht.us.org">Admissions Inquiry</a>
+
+    <a href="mailto:admission@auht.us.org">
+      Admissions Inquiry
+    </a>
+
     <a href="admissions.html">Apply Now</a>
   </div>
 </div>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html">
-      <img src="images/logo.png" alt="AUHT Logo" />
+
+    <a
+      class="brand"
+      href="index.html"
+      aria-label="American University of Healthcare Technology home"
+    >
+      <img
+        src="images/logo.png"
+        alt="American University of Healthcare Technology logo"
+      />
+
       <div class="brand-text">
-        <div class="name-en">American University of Healthcare Technology</div>
-        <div class="name-sub">AUHT · Colorado Springs</div>
+        <div class="name-en">
+          American University of Healthcare Technology
+        </div>
+
+        <div class="name-sub">
+          AUHT · Colorado Springs
+        </div>
       </div>
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Toggle navigation menu"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav
+      class="main-nav"
+      id="primary-navigation"
+      aria-label="Primary navigation"
+    >
+      <a href="index.html" aria-current="page">Home</a>
       <a href="about.html">About</a>
       <a href="academics.html">Academics</a>
       <a href="research.html">Research</a>
@@ -41,149 +212,453 @@
       <a href="global.html">Global</a>
       <a href="contact.html">Contact</a>
     </nav>
+
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-content">
-    <div class="hero-tagline">Advancing Health through Technology</div>
-    <h1>Evidence into Practice.<br/>Technology with Humanity.<br/>Health for All.</h1>
-    <p class="lead">The American University of Healthcare Technology (AUHT) is an applied higher-education institution dedicated to healthcare technology, public health, biomedical informatics, behavioral medicine, and sustainable wellbeing — based in Colorado Springs, Colorado.</p>
-    <div class="hero-actions">
-      <a href="academics.html" class="btn btn-primary">Explore Programs</a>
-      <a href="about.html" class="btn btn-outline">About AUHT</a>
-    </div>
-  </div>
-</section>
+<main>
 
-<section style="padding:0;">
-  <div class="tile-grid">
-    <a href="programs-foundational.html" class="tile">
-      <div class="tile-eyebrow">2-Year</div>
-      <h3>Foundational Certificate</h3>
-      <p>Healthcare Data · Public Health · Behavioral Medicine</p>
-      <span class="tile-arrow">→</span>
-    </a>
-    <a href="programs-graduate.html" class="tile">
-      <div class="tile-eyebrow">1-Year</div>
-      <h3>Graduate Certificate</h3>
-      <p>Biomedical Informatics · Epidemiology · Healthy City Science</p>
-      <span class="tile-arrow">→</span>
-    </a>
-    <a href="programs-postgraduate.html" class="tile">
-      <div class="tile-eyebrow">2-Year</div>
-      <h3>Post-graduate Certificate</h3>
-      <p>Population Health · Health Policy & Management</p>
-      <span class="tile-arrow">→</span>
-    </a>
-    <a href="research.html" class="tile">
-      <div class="tile-eyebrow">Postdoctoral</div>
-      <h3>University Research Center</h3>
-      <p>Four institutes for interdisciplinary health research</p>
-      <span class="tile-arrow">→</span>
-    </a>
-  </div>
-</section>
+  <section class="hero">
+    <div class="container hero-content">
 
-<section>
-  <div class="container">
-    <div class="split">
-      <div>
-        <span class="section-eyebrow" style="text-align:left;">About AUHT</span>
-        <h2 style="text-align:left; margin-bottom:20px;">A University Built for the Future of Health</h2>
-        <p>The world today faces aging populations, rising chronic disease, public-health risks, digital transformation, AI in medicine, health inequities, and the challenge of sustainable wellbeing. Single-discipline training alone is no longer enough.</p>
-        <p>AUHT integrates medical science, public health, data science, AI, behavioral science, policy, and sustainability — preparing applied, research-oriented, and leadership-capable professionals to solve real-world health problems and advance more equitable, effective, and human-centered care systems.</p>
-        <a href="about.html" class="btn btn-dark" style="margin-top:18px;">Read More</a>
+      <div class="hero-tagline">
+        Advancing Health through Technology
       </div>
-      <div class="quote-tile">
+
+      <h1>
+        American University of Healthcare Technology
+      </h1>
+
+      <h2>
+        Evidence into Practice.<br />
+        Technology with Humanity.<br />
+        Health for All.
+      </h2>
+
+      <p class="lead">
+        The American University of Healthcare Technology (AUHT) is an
+        applied higher-education institution dedicated to healthcare
+        technology, public health, biomedical informatics, behavioral
+        medicine, population health, and sustainable wellbeing — based
+        in Colorado Springs, Colorado.
+      </p>
+
+      <div class="hero-actions">
+        <a href="academics.html" class="btn btn-primary">
+          Explore Programs
+        </a>
+
+        <a href="about.html" class="btn btn-outline">
+          About AUHT
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="padding: 0;" aria-label="Academic pathways">
+    <div class="tile-grid">
+
+      <a href="programs-foundational.html" class="tile">
+        <div class="tile-eyebrow">2-Year</div>
+        <h3>Foundational Certificate</h3>
+        <p>
+          Healthcare Data · Public Health · Behavioral Medicine
+        </p>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="programs-graduate.html" class="tile">
+        <div class="tile-eyebrow">1-Year</div>
+        <h3>Graduate Certificate</h3>
+        <p>
+          Biomedical Informatics · Epidemiology · Healthy City Science
+        </p>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="programs-postgraduate.html" class="tile">
+        <div class="tile-eyebrow">2-Year</div>
+        <h3>Post-graduate Certificate</h3>
+        <p>
+          Population Health · Health Policy &amp; Management
+        </p>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a href="research.html" class="tile">
+        <div class="tile-eyebrow">Postdoctoral</div>
+        <h3>University Research Center</h3>
+        <p>
+          Four institutes for interdisciplinary health research
+        </p>
+        <span class="tile-arrow" aria-hidden="true">→</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="split">
+
         <div>
-          <div class="quote-mark">❝</div>
-          <p>Health is the result of individuals, families, communities, cities, policy, and technology working together.</p>
-          <div class="quote-author">— HEALTH FOR ALL</div>
+          <span
+            class="section-eyebrow"
+            style="text-align: left;"
+          >
+            About AUHT
+          </span>
+
+          <h2 style="text-align: left; margin-bottom: 20px;">
+            A University Built for the Future of Health
+          </h2>
+
+          <p>
+            The world today faces aging populations, rising chronic
+            disease, public-health risks, digital transformation, AI in
+            medicine, health inequities, and the challenge of sustainable
+            wellbeing. Single-discipline training alone is no longer enough.
+          </p>
+
+          <p>
+            AUHT integrates medical science, public health, data science,
+            AI, behavioral science, policy, and sustainability — preparing
+            applied, research-oriented, and leadership-capable professionals
+            to solve real-world health problems and advance more equitable,
+            effective, and human-centered care systems.
+          </p>
+
+          <a
+            href="about.html"
+            class="btn btn-dark"
+            style="margin-top: 18px;"
+          >
+            Read More
+          </a>
         </div>
+
+        <div class="quote-tile">
+          <div>
+            <div class="quote-mark" aria-hidden="true">❝</div>
+
+            <p>
+              Health is the result of individuals, families, communities,
+              cities, policy, and technology working together.
+            </p>
+
+            <div class="quote-author">
+              — HEALTH FOR ALL
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-alt">
-  <div class="container">
-    <span class="section-eyebrow">Core Values</span>
-    <h2 class="section-title">What We Stand For</h2>
-    <p class="section-subtitle">Five values guide our teaching, research, and community engagement.</p>
-    <div class="grid grid-3">
-      <div class="card"><div class="card-body"><h3>Health for All</h3><p>Health is shaped by individuals, families, communities, cities, policy, and technology working together.</p></div></div>
-      <div class="card"><div class="card-body"><h3>Technology with Humanity</h3><p>AI, data science, and digital tools must serve human dignity, patient safety, equity, and social wellbeing.</p></div></div>
-      <div class="card"><div class="card-body"><h3>Evidence into Practice</h3><p>We prepare students to design programs, analyze data, evaluate outcomes, and drive real improvement.</p></div></div>
-      <div class="card"><div class="card-body"><h3>Ethics and Responsibility</h3><p>Research ethics, privacy, academic integrity, and professional boundaries are foundational, not optional.</p></div></div>
-      <div class="card"><div class="card-body"><h3>Interdisciplinary Collaboration</h3><p>Medicine, nursing, public health, data, management, behavior, urban studies, law, and sustainability working together.</p></div></div>
+  <section class="section-alt">
+    <div class="container">
+
+      <span class="section-eyebrow">
+        Core Values
+      </span>
+
+      <h2 class="section-title">
+        What We Stand For
+      </h2>
+
+      <p class="section-subtitle">
+        Five values guide our teaching, research, and community engagement.
+      </p>
+
+      <div class="grid grid-3">
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Health for All</h3>
+            <p>
+              Health is shaped by individuals, families, communities,
+              cities, policy, and technology working together.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Technology with Humanity</h3>
+            <p>
+              AI, data science, and digital tools must serve human dignity,
+              patient safety, equity, and social wellbeing.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Evidence into Practice</h3>
+            <p>
+              We prepare students to design programs, analyze data,
+              evaluate outcomes, and drive real improvement.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Ethics and Responsibility</h3>
+            <p>
+              Research ethics, privacy, academic integrity, and professional
+              boundaries are foundational, not optional.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Interdisciplinary Collaboration</h3>
+            <p>
+              Medicine, nursing, public health, data, management, behavior,
+              urban studies, law, and sustainability working together.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <div class="container">
-    <span class="section-eyebrow">Research</span>
-    <h2 class="section-title">University Research Center</h2>
-    <p class="section-subtitle">Advancing interdisciplinary research, postdoctoral training, research ethics, and international academic exchange.</p>
-    <div class="grid grid-2">
-      <div class="card"><div class="card-body"><h3>Institute of Medical Big Data & Computational Health</h3><p>Clinical data, AI, computational health, decision support, and quality improvement grounded in real-world clinical problems.</p><a href="research.html" class="card-link">Learn more</a></div></div>
-      <div class="card"><div class="card-body"><h3>Institute of Applied Epidemiology & Lifestyle Medicine</h3><p>Population health, prevention, behavior, lifestyle interventions, chronic disease management, and community public health.</p><a href="research.html" class="card-link">Learn more</a></div></div>
-      <div class="card"><div class="card-body"><h3>Institute of Whole-Person Health & Sustainable Wellbeing</h3><p>Health as the outcome of social, cultural, economic, environmental, and institutional systems.</p><a href="research.html" class="card-link">Learn more</a></div></div>
-      <div class="card"><div class="card-body"><h3>Ethics Committee</h3><p>Ethics review and compliance support for human-subjects, health-data, AI, and public-health research.</p><a href="research.html" class="card-link">Learn more</a></div></div>
+  <section>
+    <div class="container">
+
+      <span class="section-eyebrow">
+        Research
+      </span>
+
+      <h2 class="section-title">
+        University Research Center
+      </h2>
+
+      <p class="section-subtitle">
+        Advancing interdisciplinary research, postdoctoral training,
+        research ethics, and international academic exchange.
+      </p>
+
+      <div class="grid grid-2">
+
+        <div class="card">
+          <div class="card-body">
+            <h3>
+              Institute of Medical Big Data &amp; Computational Health
+            </h3>
+
+            <p>
+              Clinical data, AI, computational health, decision support,
+              and quality improvement grounded in real-world clinical
+              problems.
+            </p>
+
+            <a href="research.html" class="card-link">
+              Learn more
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>
+              Institute of Applied Epidemiology &amp; Lifestyle Medicine
+            </h3>
+
+            <p>
+              Population health, prevention, behavior, lifestyle
+              interventions, chronic disease management, and community
+              public health.
+            </p>
+
+            <a href="research.html" class="card-link">
+              Learn more
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>
+              Institute of Whole-Person Health &amp; Sustainable Wellbeing
+            </h3>
+
+            <p>
+              Health as the outcome of social, cultural, economic,
+              environmental, and institutional systems.
+            </p>
+
+            <a href="research.html" class="card-link">
+              Learn more
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Ethics Committee</h3>
+
+            <p>
+              Ethics review and compliance support for human-subjects,
+              health-data, AI, and public-health research.
+            </p>
+
+            <a href="research.html" class="card-link">
+              Learn more
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta-banner">
-  <h2>Join AUHT and Lead the Future of Health</h2>
-  <p>Whether you are entering the field, transitioning into health, or extending a doctoral career, AUHT offers a pathway designed for you.</p>
-  <a href="admissions.html" class="btn btn-dark">View Admissions</a>
-</section>
+  <section class="cta-banner">
+    <h2>
+      Join AUHT and Lead the Future of Health
+    </h2>
+
+    <p>
+      Whether you are entering the field, transitioning into health,
+      or extending a doctoral career, AUHT offers a pathway designed
+      for you.
+    </p>
+
+    <a href="admissions.html" class="btn btn-dark">
+      View Admissions
+    </a>
+  </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">
+
     <div class="footer-grid">
+
       <div class="footer-brand">
-        <img src="images/logo.png" alt="AUHT" />
-        <p><strong>American University of Healthcare Technology</strong><br/>North Academy Boulevard,<br/>Colorado Springs, Colorado, USA</p>
+        <img
+          src="images/logo.png"
+          alt="American University of Healthcare Technology logo"
+        />
+
+        <p>
+          <strong>
+            American University of Healthcare Technology
+          </strong>
+          <br />
+          North Academy Boulevard,
+          <br />
+          Colorado Springs, Colorado, USA
+        </p>
       </div>
+
       <div>
         <h4>Academics</h4>
+
         <ul>
-          <li><a href="academics.html">Overview</a></li>
-          <li><a href="programs-foundational.html">Foundational Certificate</a></li>
-          <li><a href="programs-graduate.html">Graduate Certificate</a></li>
-          <li><a href="programs-postgraduate.html">Post-graduate Certificate</a></li>
-          <li><a href="research.html">Research Center</a></li>
+          <li>
+            <a href="academics.html">Overview</a>
+          </li>
+
+          <li>
+            <a href="programs-foundational.html">
+              Foundational Certificate
+            </a>
+          </li>
+
+          <li>
+            <a href="programs-graduate.html">
+              Graduate Certificate
+            </a>
+          </li>
+
+          <li>
+            <a href="programs-postgraduate.html">
+              Post-graduate Certificate
+            </a>
+          </li>
+
+          <li>
+            <a href="research.html">
+              Research Center
+            </a>
+          </li>
         </ul>
       </div>
+
       <div>
         <h4>About</h4>
+
         <ul>
-          <li><a href="about.html">The University</a></li>
-          <li><a href="president.html">President</a></li>
-          <li><a href="leadership.html">Leadership</a></li>
-          <li><a href="global.html">Global Partnerships</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
+          <li>
+            <a href="about.html">The University</a>
+          </li>
+
+          <li>
+            <a href="president.html">President</a>
+          </li>
+
+          <li>
+            <a href="leadership.html">Leadership</a>
+          </li>
+
+          <li>
+            <a href="global.html">Global Partnerships</a>
+          </li>
+
+          <li>
+            <a href="admissions.html">Admissions</a>
+          </li>
         </ul>
       </div>
+
       <div>
         <h4>Contact</h4>
+
         <ul>
-          <li><a href="mailto:consult@auht.us.org">consult@auht.us.org</a></li>
-          <li><a href="mailto:admission@auht.us.org">admission@auht.us.org</a></li>
-          <li><a href="mailto:cooperation@auht.us.org">cooperation@auht.us.org</a></li>
+          <li>
+            <a href="mailto:consult@auht.us.org">
+              consult@auht.us.org
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:admission@auht.us.org">
+              admission@auht.us.org
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:cooperation@auht.us.org">
+              cooperation@auht.us.org
+            </a>
+          </li>
         </ul>
       </div>
+
     </div>
+
     <div class="footer-bottom">
-      <p>© 1995 American University of Healthcare Technology. All rights reserved.</p>
-      <p>Advancing Health through Technology, Evidence, and Human Wellbeing.</p>
+      <p>
+        © 1995 American University of Healthcare Technology.
+        All rights reserved.
+      </p>
+
+      <p>
+        Advancing Health through Technology, Evidence, and Human Wellbeing.
+      </p>
     </div>
+
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+
 </body>
 </html>
